@@ -1,0 +1,23 @@
+POST http://localhost:8000/bands
+Content-Type: application/json
+
+{
+    "name": "MAIS TESTE",
+    "genre": "Rock",
+    "albums": [
+        {
+            "title": "N SEI",
+            "release_date": "2013-01-01"
+        },
+        {
+            "title": "N SEI 2",
+            "release_date": "2013-01-02"
+        }
+    ]
+}
+###
+
+GET http://localhost:8000/bands?1
+
+###
+GET http://localhost:8000/bands/4
